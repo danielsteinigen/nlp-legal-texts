@@ -1,0 +1,20 @@
+{
+    "entity_types": [
+        {
+            "idx": 0,
+            "label": "O"
+        },
+        {
+            "idx": 2,
+            "label": "Condition"
+        }
+    ],
+    "relation_types": [],
+    "id_of_non_entity": 0,
+    "groups": [
+        [
+            0,
+            2
+        ]
+    ]
+}

@@ -1,0 +1,149 @@
+{
+    "language": "de_core_news_sm",
+    "pipeline": [
+        {
+            "intent_tokenization_flag": false,
+            "intent_split_symbol": "_",
+            "token_pattern": null,
+            "name": "WhitespaceTokenizer",
+            "index": 0,
+            "class": "rasa.nlu.tokenizers.whitespace_tokenizer.WhitespaceTokenizer"
+        },
+        {
+            "case_sensitive": true,
+            "use_lookup_tables": true,
+            "use_regexes": true,
+            "number_additional_patterns": null,
+            "use_word_boundaries": true,
+            "name": "RegexFeaturizer",
+            "index": 1,
+            "alias": "component_1_RegexFeaturizer",
+            "file": "component_1_RegexFeaturizer",
+            "class": "rasa.nlu.featurizers.sparse_featurizer.regex_featurizer.RegexFeaturizer"
+        },
+        {
+            "features": [
+                [
+                    "low",
+                    "title",
+                    "upper"
+                ],
+                [
+                    "BOS",
+                    "EOS",
+                    "low",
+                    "upper",
+                    "title",
+                    "digit"
+                ],
+                [
+                    "low",
+                    "title",
+                    "upper"
+                ]
+            ],
+            "name": "LexicalSyntacticFeaturizer",
+            "index": 2,
+            "alias": "component_2_LexicalSyntacticFeaturizer",
+            "file": "component_2_LexicalSyntacticFeaturizer",
+            "class": "rasa.nlu.featurizers.sparse_featurizer.lexical_syntactic_featurizer.LexicalSyntacticFeaturizer"
+        },
+        {
+            "use_shared_vocab": false,
+            "analyzer": "word",
+            "strip_accents": null,
+            "stop_words": null,
+            "min_df": 1,
+            "max_df": 1.0,
+            "min_ngram": 1,
+            "max_ngram": 1,
+            "max_features": null,
+            "lowercase": true,
+            "OOV_token": null,
+            "OOV_words": [],
+            "use_lemma": true,
+            "additional_vocabulary_size": {
+                "text": null,
+                "response": null,
+                "action_text": null
+            },
+            "name": "CountVectorsFeaturizer",
+            "index": 3,
+            "alias": "component_3_CountVectorsFeaturizer",
+            "file": "component_3_CountVectorsFeaturizer.pkl",
+            "class": "rasa.nlu.featurizers.sparse_featurizer.count_vectors_featurizer.CountVectorsFeaturizer"
+        },
+        {
+            "use_shared_vocab": false,
+            "analyzer": "char_wb",
+            "strip_accents": null,
+            "stop_words": null,
+            "min_df": 1,
+            "max_df": 1.0,
+            "min_ngram": 1,
+            "max_ngram": 4,
+            "max_features": null,
+            "lowercase": true,
+            "OOV_token": null,
+            "OOV_words": [],
+            "use_lemma": true,
+            "additional_vocabulary_size": {
+                "text": null,
+                "response": null,
+                "action_text": null
+            },
+            "name": "CountVectorsFeaturizer",
+            "index": 4,
+            "alias": "component_4_CountVectorsFeaturizer",
+            "file": "component_4_CountVectorsFeaturizer.pkl",
+            "class": "rasa.nlu.featurizers.sparse_featurizer.count_vectors_featurizer.CountVectorsFeaturizer"
+        },
+        {
+            "BILOU_flag": true,
+            "split_entities_by_comma": true,
+            "features": [
+                [
+                    "low",
+                    "title",
+                    "upper"
+                ],
+                [
+                    "low",
+                    "bias",
+                    "prefix5",
+                    "prefix2",
+                    "suffix5",
+                    "suffix3",
+                    "suffix2",
+                    "upper",
+                    "title",
+                    "digit",
+                    "pattern"
+                ],
+                [
+                    "low",
+                    "title",
+                    "upper"
+                ]
+            ],
+            "max_iterations": 100,
+            "L1_c": 0.1,
+            "L2_c": 0.1,
+            "featurizers": [],
+            "name": "CRFEntityExtractor",
+            "index": 5,
+            "files": {
+                "entity": "component_5_CRFEntityExtractor.entity.pkl"
+            },
+            "class": "rasa.nlu.extractors.crf_entity_extractor.CRFEntityExtractor"
+        },
+        {
+            "name": "EntitySynonymMapper",
+            "index": 6,
+            "file": "component_6_EntitySynonymMapper.json",
+            "class": "rasa.nlu.extractors.entity_synonyms.EntitySynonymMapper"
+        }
+    ],
+    "trained_at": "20221218-093321",
+    "rasa_version": "2.3.5"
+}

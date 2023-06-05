@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.iais.fraunhofer.de/KeyFiTax/"
+     xml:base="https://www.iais.fraunhofer.de/KeyFiTax/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:KeyFiTax="https://www.iais.fraunhofer.de/KeyFiTax#">
+    <owl:Ontology rdf:about="https://www.iais.fraunhofer.de/KeyFiTax"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasCondition">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Condition"/>
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Expression"/>
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#KeyFigure"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasExpression -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasExpression">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Condition"/>
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#KeyFigure"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasFactor -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasFactor">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Expression"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Factor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasKeyFigure -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasKeyFigure">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Paragraph"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#KeyFigure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasLegalSource -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasLegalSource">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#TaxLaw"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#LegalSource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasParagraph -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasParagraph">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#LegalSource"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Paragraph"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasRange -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasRange">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Expression"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Range"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasUnit">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Expression"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#join -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#join"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#refersTo -->
+
+    <owl:ObjectProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#refersTo">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Condition"/>
+        <rdfs:range rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Paragraph"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasDeclaration -->
+
+    <owl:DatatypeProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasDeclaration">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#DeclarativeExpression"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#hasValue">
+        <rdfs:domain rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#StatedExpression"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#AlternativeCondition -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#AlternativeCondition">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#Condition -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#Condition"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#CumulativeCondition -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#CumulativeCondition">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#Currency -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#Currency">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#DeclarativeExpression -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#DeclarativeExpression">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#DeclarativeKeyFigure -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#DeclarativeKeyFigure">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#KeyFigure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#Expression -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#Expression"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#Factor -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#Factor"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#KeyFigure -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#KeyFigure"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#LegalSource -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#LegalSource"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#LimitRange -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#LimitRange">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Range"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#LowerLimit -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#LowerLimit">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Range"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#NegativeCondition -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#NegativeCondition">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#Paragraph -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#Paragraph"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#QuantitativeFactor -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#QuantitativeFactor">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#Range -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#Range"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#StatedExpression -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#StatedExpression">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#StatedKeyFigure -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#StatedKeyFigure">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#KeyFigure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#TaxLaw -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#TaxLaw"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#TemporalFactor -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#TemporalFactor">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#Unit -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#Unit"/>
+    
+
+
+    <!-- https://www.iais.fraunhofer.de/KeyFiTax#UpperLimit -->
+
+    <owl:Class rdf:about="https://www.iais.fraunhofer.de/KeyFiTax#UpperLimit">
+        <rdfs:subClassOf rdf:resource="https://www.iais.fraunhofer.de/KeyFiTax#Range"/>
+    </owl:Class>
+    
+    
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,540 @@
+{
+    "data": [
+        {
+            "idx": 0,
+            "text": "EStG § 66 Höhe des Kindergeldes, Zahlungszeitraum\n(1) Das Kindergeld beträgt monatlich für das erste und zweite Kind jeweils 219 Euro, für das dritte Kind 225 Euro und für das vierte und jedes weitere Kind jeweils 250 Euro.",
+            "entities": [
+                {
+                    "id": 1,
+                    "text": "für das erste und zweite Kind",
+                    "start": 87,
+                    "end": 116,
+                    "ent_type": {
+                        "idx": 2,
+                        "label": "Bedingung"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 7,
+                    "text": "für das dritte Kind",
+                    "start": 135,
+                    "end": 154,
+                    "ent_type": {
+                        "idx": 2,
+                        "label": "Bedingung"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 11,
+                    "text": "für das vierte und jedes weitere Kind",
+                    "start": 168,
+                    "end": 205,
+                    "ent_type": {
+                        "idx": 2,
+                        "label": "Bedingung"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1001,
+                    "text": "Kindergeld",
+                    "start": 58,
+                    "end": 68,
+                    "ent_type": {
+                        "idx": 1,
+                        "label": "Kennzahl"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1002,
+                    "text": "monatlich",
+                    "start": 77,
+                    "end": 86,
+                    "ent_type": {
+                        "idx": 7,
+                        "label": "Faktor"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1003,
+                    "text": "jeweils",
+                    "start": 117,
+                    "end": 124,
+                    "ent_type": {
+                        "idx": 7,
+                        "label": "Faktor"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1004,
+                    "text": "219",
+                    "start": 125,
+                    "end": 128,
+                    "ent_type": {
+                        "idx": 3,
+                        "label": "Wert"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1005,
+                    "text": "Euro",
+                    "start": 129,
+                    "end": 133,
+                    "ent_type": {
+                        "idx": 4,
+                        "label": "Einheit"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1006,
+                    "text": "225",
+                    "start": 155,
+                    "end": 158,
+                    "ent_type": {
+                        "idx": 3,
+                        "label": "Wert"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1007,
+                    "text": "Euro",
+                    "start": 159,
+                    "end": 163,
+                    "ent_type": {
+                        "idx": 4,
+                        "label": "Einheit"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1008,
+                    "text": "jeweils",
+                    "start": 206,
+                    "end": 213,
+                    "ent_type": {
+                        "idx": 7,
+                        "label": "Faktor"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1009,
+                    "text": "250",
+                    "start": 214,
+                    "end": 217,
+                    "ent_type": {
+                        "idx": 3,
+                        "label": "Wert"
+                    },
+                    "confidence": null
+                },
+                {
+                    "id": 1010,
+                    "text": "Euro",
+                    "start": 218,
+                    "end": 222,
+                    "ent_type": {
+                        "idx": 4,
+                        "label": "Einheit"
+                    },
+                    "confidence": null
+                }
+            ],
+            "relations": [
+                {
+                    "id": 1,
+                    "head": 1001,
+                    "tail": 1004,
+                    "rel_type": {
+                        "idx": 10,
+                        "label": "hatWert"
+                    }
+                },
+                {
+                    "id": 2,
+                    "head": 1001,
+                    "tail": 1009,
+                    "rel_type": {
+                        "idx": 10,
+                        "label": "hatWert"
+                    }
+                },
+                {
+                    "id": 3,
+                    "head": 1004,
+                    "tail": 1002,
+                    "rel_type": {
+                        "idx": 14,
+                        "label": "hatFaktor"
+                    }
+                },
+                {
+                    "id": 4,
+                    "head": 1004,
+                    "tail": 1,
+                    "rel_type": {
+                        "idx": 9,
+                        "label": "hatBedingung"
+                    }
+                },
+                {
+                    "id": 5,
+                    "head": 1004,
+                    "tail": 1003,
+                    "rel_type": {
+                        "idx": 14,
+                        "label": "hatFaktor"
+                    }
+                },
+                {
+                    "id": 6,
+                    "head": 1004,
+                    "tail": 1005,
+                    "rel_type": {
+                        "idx": 11,
+                        "label": "hatEinheit"
+                    }
+                },
+                {
+                    "id": 7,
+                    "head": 1006,
+                    "tail": 1002,
+                    "rel_type": {
+                        "idx": 14,
+                        "label": "hatFaktor"
+                    }
+                },
+                {
+                    "id": 8,
+                    "head": 1006,
+                    "tail": 7,
+                    "rel_type": {
+                        "idx": 9,
+                        "label": "hatBedingung"
+                    }
+                },
+                {
+                    "id": 9,
+                    "head": 1006,
+                    "tail": 1007,
+                    "rel_type": {
+                        "idx": 11,
+                        "label": "hatEinheit"
+                    }
+                },
+                {
+                    "id": 10,
+                    "head": 1009,
+                    "tail": 1002,
+                    "rel_type": {
+                        "idx": 14,
+                        "label": "hatFaktor"
+                    }
+                },
+                {
+                    "id": 11,
+                    "head": 1009,
+                    "tail": 11,
+                    "rel_type": {
+                        "idx": 9,
+                        "label": "hatBedingung"
+                    }
+                },
+                {
+                    "id": 12,
+                    "head": 1009,
+                    "tail": 1008,
+                    "rel_type": {
+                        "idx": 14,
+                        "label": "hatFaktor"
+                    }
+                },
+                {
+                    "id": 13,
+                    "head": 1009,
+                    "tail": 1010,
+                    "rel_type": {
+                        "idx": 11,
+                        "label": "hatEinheit"
+                    }
+                }
+            ],
+            "tokens": [
+                {
+                    "text": "EStG",
+                    "start": 0,
+                    "end": 4
+                },
+                {
+                    "text": "§",
+                    "start": 5,
+                    "end": 6
+                },
+                {
+                    "text": "66",
+                    "start": 7,
+                    "end": 9
+                },
+                {
+                    "text": "Höhe",
+                    "start": 10,
+                    "end": 14
+                },
+                {
+                    "text": "des",
+                    "start": 15,
+                    "end": 18
+                },
+                {
+                    "text": "Kindergeldes",
+                    "start": 19,
+                    "end": 31
+                },
+                {
+                    "text": ",",
+                    "start": 31,
+                    "end": 32
+                },
+                {
+                    "text": "Zahlungszeitraum",
+                    "start": 33,
+                    "end": 49
+                },
+                {
+                    "text": "\n",
+                    "start": 49,
+                    "end": 50
+                },
+                {
+                    "text": "(",
+                    "start": 50,
+                    "end": 51
+                },
+                {
+                    "text": "1",
+                    "start": 51,
+                    "end": 52
+                },
+                {
+                    "text": ")",
+                    "start": 52,
+                    "end": 53
+                },
+                {
+                    "text": "Das",
+                    "start": 54,
+                    "end": 57
+                },
+                {
+                    "text": "Kindergeld",
+                    "start": 58,
+                    "end": 68
+                },
+                {
+                    "text": "beträgt",
+                    "start": 69,
+                    "end": 76
+                },
+                {
+                    "text": "monatlich",
+                    "start": 77,
+                    "end": 86
+                },
+                {
+                    "text": "für",
+                    "start": 87,
+                    "end": 90
+                },
+                {
+                    "text": "das",
+                    "start": 91,
+                    "end": 94
+                },
+                {
+                    "text": "erste",
+                    "start": 95,
+                    "end": 100
+                },
+                {
+                    "text": "und",
+                    "start": 101,
+                    "end": 104
+                },
+                {
+                    "text": "zweite",
+                    "start": 105,
+                    "end": 111
+                },
+                {
+                    "text": "Kind",
+                    "start": 112,
+                    "end": 116
+                },
+                {
+                    "text": "jeweils",
+                    "start": 117,
+                    "end": 124
+                },
+                {
+                    "text": "219",
+                    "start": 125,
+                    "end": 128
+                },
+                {
+                    "text": "Euro",
+                    "start": 129,
+                    "end": 133
+                },
+                {
+                    "text": ",",
+                    "start": 133,
+                    "end": 134
+                },
+                {
+                    "text": "für",
+                    "start": 135,
+                    "end": 138
+                },
+                {
+                    "text": "das",
+                    "start": 139,
+                    "end": 142
+                },
+                {
+                    "text": "dritte",
+                    "start": 143,
+                    "end": 149
+                },
+                {
+                    "text": "Kind",
+                    "start": 150,
+                    "end": 154
+                },
+                {
+                    "text": "225",
+                    "start": 155,
+                    "end": 158
+                },
+                {
+                    "text": "Euro",
+                    "start": 159,
+                    "end": 163
+                },
+                {
+                    "text": "und",
+                    "start": 164,
+                    "end": 167
+                },
+                {
+                    "text": "für",
+                    "start": 168,
+                    "end": 171
+                },
+                {
+                    "text": "das",
+                    "start": 172,
+                    "end": 175
+                },
+                {
+                    "text": "vierte",
+                    "start": 176,
+                    "end": 182
+                },
+                {
+                    "text": "und",
+                    "start": 183,
+                    "end": 186
+                },
+                {
+                    "text": "jedes",
+                    "start": 187,
+                    "end": 192
+                },
+                {
+                    "text": "weitere",
+                    "start": 193,
+                    "end": 200
+                },
+                {
+                    "text": "Kind",
+                    "start": 201,
+                    "end": 205
+                },
+                {
+                    "text": "jeweils",
+                    "start": 206,
+                    "end": 213
+                },
+                {
+                    "text": "250",
+                    "start": 214,
+                    "end": 217
+                },
+                {
+                    "text": "Euro",
+                    "start": 218,
+                    "end": 222
+                },
+                {
+                    "text": ".",
+                    "start": 222,
+                    "end": 223
+                }
+            ],
+            "tags": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                7,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                7,
+                3,
+                4,
+                0,
+                2,
+                2,
+                2,
+                2,
+                3,
+                4,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                7,
+                3,
+                4,
+                0
+            ]
+        }
+    ]
+}

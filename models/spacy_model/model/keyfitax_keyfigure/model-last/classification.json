@@ -1,0 +1,53 @@
+{
+    "entity_types": [
+        {
+            "idx": 0,
+            "label": "O"
+        },
+        {
+            "idx": 2,
+            "label": "Factor"
+        },
+        {
+            "idx": 3,
+            "label": "StatedKeyFigure"
+        },
+        {
+            "idx": 4,
+            "label": "StatedExpression"
+        },
+        {
+            "idx": 5,
+            "label": "Unit"
+        },
+        {
+            "idx": 6,
+            "label": "Range"
+        },
+        {
+            "idx": 7,
+            "label": "DeclarativeKeyFigure"
+        },
+        {
+            "idx": 8,
+            "label": "DeclarativeExpression"
+        }
+    ],
+    "relation_types": [],
+    "id_of_non_entity": 0,
+    "groups": [
+        [
+            0,
+            -1
+        ],
+        [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
+    ]
+}

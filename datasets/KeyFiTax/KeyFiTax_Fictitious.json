@@ -1,0 +1,1677 @@
+{
+    "data": [
+        {
+    "id": 1000,
+    "law": "Evaluation",
+    "paragraph": "AO § 55 Abs. 1 Nr. 5 - Stufe 3",
+    "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden. Verwendung in diesem Sinne ist auch die Verwendung der Mittel für die Anschaffung oder Herstellung von Vermögensgegenständen, die satzungsmäßigen Zwecken dienen. Eine zeitnahe Mittelverwendung ist gegeben, wenn die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden. Satz 1 gilt nicht für Körperschaften mit jährlichen Einnahmen von höchsten 60 000 Euro, sofern die Körperschaft dies innerhalb von zwei Monaten nach Ablauf des Kalenderjahrs oder abweichenden Wirtschaftsjahrs beantragt. \n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 0,
+        "end": 139,
+        "entity": "StatedKeyFigure",
+        "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden"
+      },
+      {
+        "id": 1,
+        "start": 352,
+        "end": 511,
+        "entity": "Condition",
+        "text": "die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden"
+      },
+      {
+        "id": 2,
+        "start": 535,
+        "end": 574,
+        "entity": "Condition",
+        "text": "Körperschaften mit jährlichen Einnahmen"
+      },
+      {
+        "id": 3,
+        "start": 579,
+        "end": 587,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "höchsten"
+      },
+      {
+        "id": 4,
+        "start": 588,
+        "end": 594,
+        "entity": "StatedExpression",
+        "text": "60 000"
+      },
+      {
+        "id": 5,
+        "start": 595,
+        "end": 599,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 6,
+        "start": 608,
+        "end": 731,
+        "entity": "Condition",
+        "text": "die Körperschaft dies innerhalb von zwei Monaten nach Ablauf des Kalenderjahrs oder abweichenden Wirtschaftsjahrs beantragt"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 0,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 0,
+        "tail": 2,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 4,
+        "tail": 3,
+        "relation": "hasRange"
+      },
+      {
+        "id": 3,
+        "head": 2,
+        "tail": 4,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 4,
+        "head": 4,
+        "tail": 5,
+        "relation": "hasUnit"
+      }
+    ]
+  },
+  {
+    "id": 1001,
+    "law": "Evaluation",
+    "paragraph": "EStG § 4 Abs. 4b - Stufe 2",
+    "text": "Als fiktive Betriebsausgaben gelten die tatsächlichen Aufwendungen des Steuerpflichtigen für ein elektrisch betriebenes Kraftfahrzeug bis zu einer Höhe von 0,05 Euro je gefahrenem Kilometer, jedoch nicht mehr als 50 Euro je Monat.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 4,
+        "end": 28,
+        "entity": "StatedKeyFigure",
+        "text": "fiktive Betriebsausgaben"
+      },
+      {
+        "id": 1,
+        "start": 134,
+        "end": 155,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "bis zu einer Höhe von"
+      },
+      {
+        "id": 2,
+        "start": 156,
+        "end": 160,
+        "entity": "StatedExpression",
+        "text": "0,05"
+      },
+      {
+        "id": 3,
+        "start": 161,
+        "end": 165,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 4,
+        "start": 166,
+        "end": 189,
+        "entity": "Factor",
+        "subclass": "QuantitativeFactor",
+        "text": "je gefahrenem Kilometer"
+      },
+      {
+        "id": 5,
+        "start": 198,
+        "end": 212,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "nicht mehr als"
+      },
+      {
+        "id": 6,
+        "start": 213,
+        "end": 215,
+        "entity": "StatedExpression",
+        "text": "50"
+      },
+      {
+        "id": 7,
+        "start": 216,
+        "end": 220,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 8,
+        "start": 221,
+        "end": 229,
+        "entity": "Factor",
+        "subclass": "TemporalFactor",
+        "text": "je Monat"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 6,
+        "tail": 5,
+        "relation": "hasRange"
+      },
+      {
+        "id": 1,
+        "head": 6,
+        "tail": 7,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 2,
+        "head": 6,
+        "tail": 8,
+        "relation": "hasFactor"
+      }
+    ]
+  },
+  {
+    "id": 1002,
+    "law": "Evaluation",
+    "paragraph": "EStG § 4 Abs. 4b - Original",
+    "text": "Als fiktive Betriebsausgaben gelten die tatsächlichen Aufwendungen des Steuerpflichtigen für ein elektrisch betriebenes Kraftfahrzeug bis maximal 600 Euro.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 4,
+        "end": 28,
+        "entity": "StatedKeyFigure",
+        "text": "fiktive Betriebsausgaben"
+      },
+      {
+        "id": 1,
+        "start": 138,
+        "end": 145,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "maximal"
+      },
+      {
+        "id": 2,
+        "start": 146,
+        "end": 149,
+        "entity": "StatedExpression",
+        "text": "600"
+      },
+      {
+        "id": 3,
+        "start": 150,
+        "end": 154,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "id": 1003,
+    "law": "Evaluation",
+    "paragraph": "EStG § 20 Abs. 9 - Stufe 3",
+    "text": "Bei der Ermittlung der Einkünfte aus Kapitalvermögen ist als Werbungskosten ein Betrag von monatliche 200 Euro abzuziehen (Sparer-Pauschbetrag); der Abzug der tatsächlichen Werbungskosten ist ausgeschlossen. 2 Ehegatten, die zusammen veranlagt werden, wird ein gemeinsamer Sparer-Pauschbetrag von monatlich 400 Euro gewährt. 3 Der gemeinsame Sparer-Pauschbetrag ist bei der Einkunftsermittlung bei jedem Ehegatten je zur Hälfte abzuziehen; sind die Kapitalerträge eines Ehegatten niedriger als monatlich 200 Euro, so ist der anteilige Sparer-Pauschbetrag insoweit, als er die Kapitalerträge dieses Ehegatten übersteigt, bei dem anderen Ehegatten abzuziehen. 4 Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag dürfen nicht höher sein als die nach Maßgabe des Absatzes 6 verrechneten Kapitalerträge.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 23,
+        "end": 52,
+        "entity": "Condition",
+        "text": "Einkünfte aus Kapitalvermögen"
+      },
+      {
+        "id": 1,
+        "start": 91,
+        "end": 101,
+        "entity": "Factor",
+        "subclass": "TemporalFactor",
+        "text": "monatliche"
+      },
+      {
+        "id": 2,
+        "start": 102,
+        "end": 105,
+        "entity": "StatedExpression",
+        "text": "200"
+      },
+      {
+        "id": 3,
+        "start": 106,
+        "end": 110,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 4,
+        "start": 123,
+        "end": 142,
+        "entity": "StatedKeyFigure",
+        "text": "Sparer-Pauschbetrag"
+      },
+      {
+        "id": 5,
+        "start": 210,
+        "end": 250,
+        "entity": "Condition",
+        "text": "Ehegatten, die zusammen veranlagt werden"
+      },
+      {
+        "id": 6,
+        "start": 261,
+        "end": 292,
+        "entity": "StatedKeyFigure",
+        "text": "gemeinsamer Sparer-Pauschbetrag"
+      },
+      {
+        "id": 7,
+        "start": 297,
+        "end": 306,
+        "entity": "Factor",
+        "subclass": "TemporalFactor",
+        "text": "monatlich"
+      },
+      {
+        "id": 8,
+        "start": 307,
+        "end": 310,
+        "entity": "StatedExpression",
+        "text": "400"
+      },
+      {
+        "id": 9,
+        "start": 311,
+        "end": 315,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 10,
+        "start": 660,
+        "end": 810,
+        "entity": "Condition",
+        "text": "Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag dürfen nicht höher sein als die nach Maßgabe des Absatzes 6 verrechneten Kapitalerträge"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 6,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 4,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 2,
+        "tail": 1,
+        "relation": "hasFactor"
+      },
+      {
+        "id": 3,
+        "head": 4,
+        "tail": 2,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 4,
+        "head": 2,
+        "tail": 3,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 5,
+        "head": 6,
+        "tail": 5,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 6,
+        "head": 8,
+        "tail": 7,
+        "relation": "hasFactor"
+      },
+      {
+        "id": 7,
+        "head": 6,
+        "tail": 8,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 8,
+        "head": 8,
+        "tail": 9,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 9,
+        "head": 4,
+        "tail": 10,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 10,
+        "head": 6,
+        "tail": 10,
+        "relation": "hasCondition"
+      }
+    ]
+  },
+  {
+    "id": 1004,
+    "law": "Evaluation",
+    "paragraph": "EStG § 4 Abs. 4b - Stufe 1",
+    "text": "Als fiktive Betriebsausgaben gelten die tatsächlichen Aufwendungen des Steuerpflichtigen für ein elektrisch betriebenes Kraftfahrzeug bis zu einer Höhe von 0,05 Euro je gefahrenem Kilometer.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 4,
+        "end": 28,
+        "entity": "StatedKeyFigure",
+        "text": "fiktive Betriebsausgaben"
+      },
+      {
+        "id": 1,
+        "start": 134,
+        "end": 155,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "bis zu einer Höhe von"
+      },
+      {
+        "id": 2,
+        "start": 156,
+        "end": 160,
+        "entity": "StatedExpression",
+        "text": "0,05"
+      },
+      {
+        "id": 3,
+        "start": 161,
+        "end": 165,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 4,
+        "start": 166,
+        "end": 189,
+        "entity": "Factor",
+        "subclass": "QuantitativeFactor",
+        "text": "je gefahrenem Kilometer"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "id": 1005,
+    "law": "Evaluation",
+    "paragraph": "EStG § 20 Abs. 9 - Stufe 2",
+    "text": "Bei der Ermittlung der Einkünfte aus Kapitalvermögen ist auf Antrag als Werbungskosten ein Betrag von 1 250 Euro abzuziehen (Sparer-Pauschbetrag), wenn Einkünfte nach § 20 Abs. 1 Nr. 1 enthalten sind; der Abzug der tatsächlichen Werbungskosten ist in diesem Falle ausgeschlossen. 2 Ehegatten, die zusammen veranlagt werden, wird ein gemeinsamer Sparer-Pauschbetrag von 2 500 Euro gewährt. 3 Der gemeinsame Sparer-Pauschbetrag wird bei der Einkunftsermittlung bei jedem Ehegatten je zur Hälfte abgezogen; sind die Kapitalerträge eines Ehegatten niedriger als 1 250 Euro, so wird der anteilige Sparer-Pauschbetrag insoweit, als er die Kapitalerträge dieses Ehegatten übersteigt, bei dem anderen Ehegatten abgezogen. 4 Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag dürfen nicht höher sein als die nach Maßgabe des Absatzes 6 verrechneten Kapitalerträge, es sei denn, in die verrechneten Kapitalerträge sind Einkünfte gemäß § 20 Abs. 2 eingeflossen.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 23,
+        "end": 52,
+        "entity": "Condition",
+        "text": "Einkünfte aus Kapitalvermögen"
+      },
+      {
+        "id": 1,
+        "start": 57,
+        "end": 67,
+        "entity": "Condition",
+        "text": "auf Antrag"
+      },
+      {
+        "id": 2,
+        "start": 102,
+        "end": 107,
+        "entity": "StatedExpression",
+        "text": "1 250"
+      },
+      {
+        "id": 3,
+        "start": 108,
+        "end": 112,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 4,
+        "start": 125,
+        "end": 144,
+        "entity": "StatedKeyFigure",
+        "text": "Sparer-Pauschbetrag"
+      },
+      {
+        "id": 5,
+        "start": 147,
+        "end": 199,
+        "entity": "Condition",
+        "text": "wenn Einkünfte nach § 20 Abs. 1 Nr. 1 enthalten sind"
+      },
+      {
+        "id": 6,
+        "start": 282,
+        "end": 322,
+        "entity": "Condition",
+        "text": "Ehegatten, die zusammen veranlagt werden"
+      },
+      {
+        "id": 7,
+        "start": 333,
+        "end": 364,
+        "entity": "StatedKeyFigure",
+        "text": "gemeinsamer Sparer-Pauschbetrag"
+      },
+      {
+        "id": 8,
+        "start": 369,
+        "end": 374,
+        "entity": "StatedExpression",
+        "text": "2 500"
+      },
+      {
+        "id": 9,
+        "start": 375,
+        "end": 379,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 10,
+        "start": 716,
+        "end": 961,
+        "entity": "Condition",
+        "text": "Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag dürfen nicht höher sein als die nach Maßgabe des Absatzes 6 verrechneten Kapitalerträge, es sei denn, in die verrechneten Kapitalerträge sind Einkünfte gemäß § 20 Abs. 2 eingeflossen"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 4,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 7,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 4,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 3,
+        "head": 7,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 4,
+        "head": 4,
+        "tail": 2,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 5,
+        "head": 2,
+        "tail": 3,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 6,
+        "head": 4,
+        "tail": 5,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 7,
+        "head": 7,
+        "tail": 6,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 8,
+        "head": 7,
+        "tail": 8,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 9,
+        "head": 8,
+        "tail": 9,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 10,
+        "head": 7,
+        "tail": 10,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 11,
+        "head": 4,
+        "tail": 10,
+        "relation": "hasCondition"
+      }
+    ]
+  },
+  {
+    "id": 1006,
+    "law": "Evaluation",
+    "paragraph": "EStG § 9 Abs. 7 - Stufe 1",
+    "text": "Zum Ausgleich inflationsbedingter Mehrkosten (Inflationsausgleich) ist bei der Ermittlung der Einkünfte ein Pauschbetrag in Höhe von 50 Euro je Monat als Werbungskosten abzuziehen.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 46,
+        "end": 65,
+        "entity": "StatedKeyFigure",
+        "text": "Inflationsausgleich"
+      },
+      {
+        "id": 1,
+        "start": 133,
+        "end": 135,
+        "entity": "StatedExpression",
+        "text": "50"
+      },
+      {
+        "id": 2,
+        "start": 136,
+        "end": 140,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 3,
+        "start": 141,
+        "end": 149,
+        "entity": "Factor",
+        "subclass": "TemporalFactor",
+        "text": "je Monat"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "id": 1007,
+    "law": "Evaluation",
+    "paragraph": "EStG § 9 Abs. 7 - Original",
+    "text": "Zum Ausgleich inflationsbedingter Mehrkosten (Inflationsausgleich) ist bei der Ermittlung der Einkünfte ein Pauschbetrag in Höhe von 600 Euro als Werbungskosten abzuziehen.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 46,
+        "end": 65,
+        "entity": "StatedKeyFigure",
+        "text": "Inflationsausgleich"
+      },
+      {
+        "id": 1,
+        "start": 133,
+        "end": 136,
+        "entity": "StatedExpression",
+        "text": "600"
+      },
+      {
+        "id": 2,
+        "start": 137,
+        "end": 141,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "id": 1008,
+    "law": "Evaluation",
+    "paragraph": "EStG § 20 Abs. 9 - Original",
+    "text": "Bei der Ermittlung der Einkünfte aus Kapitalvermögen ist als Werbungskosten ein Betrag von 801 Euro abzuziehen (Sparer-Pauschbetrag); der Abzug der tatsächlichen Werbungskosten ist ausgeschlossen. 2 Ehegatten, die zusammen veranlagt werden, wird ein gemeinsamer Sparer-Pauschbetrag von 1 602 Euro gewährt. 3 Der gemeinsame Sparer-Pauschbetrag ist bei der Einkunftsermittlung bei jedem Ehegatten je zur Hälfte abzuziehen; sind die Kapitalerträge eines Ehegatten niedriger als 801 Euro, so ist der anteilige Sparer-Pauschbetrag insoweit, als er die Kapitalerträge dieses Ehegatten übersteigt, bei dem anderen Ehegatten abzuziehen. 4 Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag dürfen nicht höher sein als die nach Maßgabe des Absatzes 6 verrechneten Kapitalerträge.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 23,
+        "end": 52,
+        "entity": "Condition",
+        "text": "Einkünfte aus Kapitalvermögen"
+      },
+      {
+        "id": 1,
+        "start": 91,
+        "end": 94,
+        "entity": "StatedExpression",
+        "text": "801"
+      },
+      {
+        "id": 2,
+        "start": 95,
+        "end": 99,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 3,
+        "start": 112,
+        "end": 131,
+        "entity": "StatedKeyFigure",
+        "text": "Sparer-Pauschbetrag"
+      },
+      {
+        "id": 4,
+        "start": 199,
+        "end": 239,
+        "entity": "Condition",
+        "text": "Ehegatten, die zusammen veranlagt werden"
+      },
+      {
+        "id": 5,
+        "start": 250,
+        "end": 281,
+        "entity": "StatedKeyFigure",
+        "text": "gemeinsamer Sparer-Pauschbetrag"
+      },
+      {
+        "id": 6,
+        "start": 286,
+        "end": 291,
+        "entity": "StatedExpression",
+        "text": "1 602"
+      },
+      {
+        "id": 7,
+        "start": 292,
+        "end": 296,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 8,
+        "start": 631,
+        "end": 781,
+        "entity": "Condition",
+        "text": "Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag dürfen nicht höher sein als die nach Maßgabe des Absatzes 6 verrechneten Kapitalerträge"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 3,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 5,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 3,
+        "tail": 1,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 3,
+        "head": 1,
+        "tail": 2,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 4,
+        "head": 5,
+        "tail": 4,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 5,
+        "head": 5,
+        "tail": 6,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 6,
+        "head": 6,
+        "tail": 7,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 7,
+        "head": 5,
+        "tail": 8,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 8,
+        "head": 5,
+        "tail": 8,
+        "relation": "hasCondition"
+      }
+    ]
+  },
+  {
+    "id": 1009,
+    "law": "Evaluation",
+    "paragraph": "AO § 55 Abs. 1 Nr. 5 - Original",
+    "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden. Verwendung in diesem Sinne ist auch die Verwendung der Mittel für die Anschaffung oder Herstellung von Vermögensgegenständen, die satzungsmäßigen Zwecken dienen. Eine zeitnahe Mittelverwendung ist gegeben, wenn die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden. Satz 1 gilt nicht für Körperschaften mit jährlichen Einnahmen von nicht mehr als 45 000 Euro.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 0,
+        "end": 139,
+        "entity": "StatedKeyFigure",
+        "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden"
+      },
+      {
+        "id": 1,
+        "start": 352,
+        "end": 511,
+        "entity": "Condition",
+        "text": "die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden"
+      },
+      {
+        "id": 2,
+        "start": 535,
+        "end": 574,
+        "entity": "Condition",
+        "text": "Körperschaften mit jährlichen Einnahmen"
+      },
+      {
+        "id": 3,
+        "start": 579,
+        "end": 593,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "nicht mehr als"
+      },
+      {
+        "id": 4,
+        "start": 594,
+        "end": 600,
+        "entity": "StatedExpression",
+        "text": "45 000"
+      },
+      {
+        "id": 5,
+        "start": 601,
+        "end": 605,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 0,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 0,
+        "tail": 2,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 4,
+        "tail": 3,
+        "relation": "hasRange"
+      },
+      {
+        "id": 3,
+        "head": 2,
+        "tail": 4,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 4,
+        "head": 4,
+        "tail": 5,
+        "relation": "hasUnit"
+      }
+    ]
+  },
+  {
+    "id": 1010,
+    "law": "Evaluation",
+    "paragraph": "EStG § 4 Abs. 4b - Stufe 3",
+    "text": "Als fiktive Betriebsausgaben gelten die tatsächlichen Aufwendungen des Steuerpflichtigen für ein privates Kraftfahrzeug in Höhe von 50 Euro je Monat zuzüglich einer Pauschale von 0,05 Euro je gefahrenem Kilometer (Kilometerpauschale). Bei Ehegatten, die zusammen veranlagt werden und zwei elektrische betriebene Kraftfahrzeuge nutzen, wird die Kilometerpauschale nur einmal pro Fahrzeug gewährt.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 4,
+        "end": 28,
+        "entity": "StatedKeyFigure",
+        "text": "fiktive Betriebsausgaben"
+      },
+      {
+        "id": 1,
+        "start": 132,
+        "end": 134,
+        "entity": "StatedExpression",
+        "text": "50"
+      },
+      {
+        "id": 2,
+        "start": 135,
+        "end": 139,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 3,
+        "start": 140,
+        "end": 148,
+        "entity": "Factor",
+        "subclass": "TemporalFactor",
+        "text": "je Monat"
+      },
+      {
+        "id": 4,
+        "start": 179,
+        "end": 183,
+        "entity": "StatedExpression",
+        "text": "0,05"
+      },
+      {
+        "id": 5,
+        "start": 184,
+        "end": 188,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 6,
+        "start": 189,
+        "end": 212,
+        "entity": "Factor",
+        "subclass": "QuantitativeFactor",
+        "text": "je gefahrenem Kilometer"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "id": 1011,
+    "law": "Evaluation",
+    "paragraph": "AO § 55 Abs. 1 Nr. 5 - Stufe 4",
+    "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden. Verwendung in diesem Sinne ist auch die Verwendung der Mittel für die Anschaffung oder Herstellung von Vermögensgegenständen, die satzungsmäßigen Zwecken dienen. Eine zeitnahe Mittelverwendung ist gegeben, wenn die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden. Satz 1 gilt nicht für Körperschaften mit monatlichen Einnahmen von nicht mehr als 20 000 Euro. Satz 1 gilt ferner nicht für Körperschaften, die keinen wirtschaftlichen Geschäftsbetrieb unterhalten und an keiner Körperschaft beteiligt sind, die einen wirtschaftlichen Geschäftsbetrieb unterhält. \n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 0,
+        "end": 139,
+        "entity": "StatedKeyFigure",
+        "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden"
+      },
+      {
+        "id": 1,
+        "start": 352,
+        "end": 511,
+        "entity": "Condition",
+        "text": "die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden"
+      },
+      {
+        "id": 2,
+        "start": 535,
+        "end": 575,
+        "entity": "Condition",
+        "text": "Körperschaften mit monatlichen Einnahmen"
+      },
+      {
+        "id": 3,
+        "start": 580,
+        "end": 594,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "nicht mehr als"
+      },
+      {
+        "id": 4,
+        "start": 595,
+        "end": 601,
+        "entity": "StatedExpression",
+        "text": "20 000"
+      },
+      {
+        "id": 5,
+        "start": 602,
+        "end": 606,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 6,
+        "start": 637,
+        "end": 806,
+        "entity": "Condition",
+        "text": "Körperschaften, die keinen wirtschaftlichen Geschäftsbetrieb unterhalten und an keiner Körperschaft beteiligt sind, die einen wirtschaftlichen Geschäftsbetrieb unterhält"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 0,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 0,
+        "tail": 2,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 4,
+        "tail": 3,
+        "relation": "hasRange"
+      },
+      {
+        "id": 3,
+        "head": 2,
+        "tail": 4,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 4,
+        "head": 4,
+        "tail": 5,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 5,
+        "head": 0,
+        "tail": 6,
+        "relation": "hasCondition"
+      }
+    ]
+  },
+  {
+    "id": 1012,
+    "law": "Evaluation",
+    "paragraph": "AO § 55 Abs. 1 Nr. 5 - Stufe 2",
+    "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden. Verwendung in diesem Sinne ist auch die Verwendung der Mittel für die Anschaffung oder Herstellung von Vermögensgegenständen, die satzungsmäßigen Zwecken dienen. Eine zeitnahe Mittelverwendung ist gegeben, wenn die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden. Satz 1 gilt nicht für Körperschaften mit jährlichen Einnahmen von nicht mehr als 45 000 Euro oder für Körperschaften, die mit anderen steuerbegünstigten Körperschaften im Sinne von Abs. 2 zusammenarbeiten.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 0,
+        "end": 139,
+        "entity": "StatedKeyFigure",
+        "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden"
+      },
+      {
+        "id": 1,
+        "start": 352,
+        "end": 511,
+        "entity": "Condition",
+        "text": "die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden"
+      },
+      {
+        "id": 2,
+        "start": 535,
+        "end": 574,
+        "entity": "Condition",
+        "text": "Körperschaften mit jährlichen Einnahmen"
+      },
+      {
+        "id": 3,
+        "start": 579,
+        "end": 593,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "nicht mehr als"
+      },
+      {
+        "id": 4,
+        "start": 594,
+        "end": 600,
+        "entity": "StatedExpression",
+        "text": "45 000"
+      },
+      {
+        "id": 5,
+        "start": 601,
+        "end": 605,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 6,
+        "start": 615,
+        "end": 717,
+        "entity": "Condition",
+        "text": "Körperschaften, die mit anderen steuerbegünstigten Körperschaften im Sinne von Abs. 2 zusammenarbeiten"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 0,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 0,
+        "tail": 2,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 4,
+        "tail": 3,
+        "relation": "hasRange"
+      },
+      {
+        "id": 3,
+        "head": 2,
+        "tail": 4,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 4,
+        "head": 4,
+        "tail": 5,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 5,
+        "head": 0,
+        "tail": 6,
+        "relation": "hasCondition"
+      }
+    ]
+  },
+  {
+    "id": 1013,
+    "law": "Evaluation",
+    "paragraph": "AO § 55 Abs. 1 Nr. 5 - Stufe 1",
+    "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden. Verwendung in diesem Sinne ist auch die Verwendung der Mittel für die Anschaffung oder Herstellung von Vermögensgegenständen, die satzungsmäßigen Zwecken dienen. Eine zeitnahe Mittelverwendung ist gegeben, wenn die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden oder in die Rücklage nach § 56 Abs. 3 AO eingestellt werden. Satz 1 gilt nicht für Körperschaften mit jährlichen Einnahmen von nicht mehr als 100 000 Euro.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 0,
+        "end": 139,
+        "entity": "StatedKeyFigure",
+        "text": "Die Körperschaft muss ihre Mittel vorbehaltlich des § 62 grundsätzlich zeitnah für ihre steuerbegünstigten satzungsmäßigen Zwecke verwenden"
+      },
+      {
+        "id": 1,
+        "start": 352,
+        "end": 571,
+        "entity": "Condition",
+        "text": "die Mittel spätestens in den auf den Zufluss folgenden zwei Kalender- oder Wirtschaftsjahren für die steuerbegünstigten satzungsmäßigen Zwecke verwendet werden oder in die Rücklage nach § 56 Abs. 3 AO eingestellt werden"
+      },
+      {
+        "id": 2,
+        "start": 595,
+        "end": 634,
+        "entity": "Condition",
+        "text": "Körperschaften mit jährlichen Einnahmen"
+      },
+      {
+        "id": 3,
+        "start": 639,
+        "end": 653,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "nicht mehr als"
+      },
+      {
+        "id": 4,
+        "start": 654,
+        "end": 661,
+        "entity": "StatedExpression",
+        "text": "100 000"
+      },
+      {
+        "id": 5,
+        "start": 662,
+        "end": 666,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 0,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 0,
+        "tail": 2,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 4,
+        "tail": 3,
+        "relation": "hasRange"
+      },
+      {
+        "id": 3,
+        "head": 2,
+        "tail": 4,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 4,
+        "head": 4,
+        "tail": 5,
+        "relation": "hasUnit"
+      }
+    ]
+  },
+  {
+    "id": 1014,
+    "law": "Evaluation",
+    "paragraph": "EStG § 9 Abs. 7 - Stufe 2",
+    "text": "Zum Ausgleich inflationsbedingter Mehrkosten (Inflationsausgleich) ist bei der Ermittlung der Einkünfte ein Pauschbetrag in Höhe von 50 Euro je Monat als Werbungskosten abzuziehen, wenn nicht höhere Mehrkosten nachgewiesen werden.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 46,
+        "end": 65,
+        "entity": "StatedKeyFigure",
+        "text": "Inflationsausgleich"
+      },
+      {
+        "id": 1,
+        "start": 133,
+        "end": 135,
+        "entity": "StatedExpression",
+        "text": "50"
+      },
+      {
+        "id": 2,
+        "start": 136,
+        "end": 140,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 3,
+        "start": 141,
+        "end": 149,
+        "entity": "Factor",
+        "subclass": "TemporalFactor",
+        "text": "je Monat"
+      },
+      {
+        "id": 4,
+        "start": 181,
+        "end": 229,
+        "entity": "Condition",
+        "text": "wenn nicht höhere Mehrkosten nachgewiesen werden"
+      }
+    ],
+    "relations": []
+  },
+  {
+    "id": 1015,
+    "law": "Evaluation",
+    "paragraph": "EStG § 20 Abs. 9 - Stufe 4",
+    "text": "Bei der Ermittlung der Einkünfte aus Kapitalvermögen ist als Werbungskosten ein Betrag von höchstens 801 Euro abzuziehen (Sparer-Pauschbetrag); der Abzug der tatsächlichen Werbungskosten ist ausgeschlossen. 2 Auf Antrag wird ein Betrag von 1 000 € abgezogen, wenn der Steuerpflichtige nachweist, dass er die Einkünfte in Kapitalvermögen gemäß Absatz 10 reininvestiert hat und er diese Reininvestition nach amtlich vorgeschriebenem Muster nachweist. 3 Bei Ehegatten erhöhen sich die Beträge auf höchstens das Doppelte der in Sätze 1 und 2 genannten Werte (gemeinsame Sparer-Pauschbeträge). \n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 23,
+        "end": 52,
+        "entity": "Condition",
+        "text": "Einkünfte aus Kapitalvermögen"
+      },
+      {
+        "id": 1,
+        "start": 91,
+        "end": 100,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "höchstens"
+      },
+      {
+        "id": 2,
+        "start": 101,
+        "end": 104,
+        "entity": "StatedExpression",
+        "text": "801"
+      },
+      {
+        "id": 3,
+        "start": 105,
+        "end": 109,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 4,
+        "start": 122,
+        "end": 141,
+        "entity": "StatedKeyFigure",
+        "text": "Sparer-Pauschbetrag"
+      },
+      {
+        "id": 5,
+        "start": 209,
+        "end": 219,
+        "entity": "Condition",
+        "text": "Auf Antrag"
+      },
+      {
+        "id": 6,
+        "start": 240,
+        "end": 245,
+        "entity": "StatedExpression",
+        "text": "1 000"
+      },
+      {
+        "id": 7,
+        "start": 246,
+        "end": 247,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "€"
+      },
+      {
+        "id": 8,
+        "start": 264,
+        "end": 447,
+        "entity": "Condition",
+        "text": "der Steuerpflichtige nachweist, dass er die Einkünfte in Kapitalvermögen gemäß Absatz 10 reininvestiert hat und er diese Reininvestition nach amtlich vorgeschriebenem Muster nachweist"
+      },
+      {
+        "id": 9,
+        "start": 455,
+        "end": 464,
+        "entity": "Condition",
+        "text": "Ehegatten"
+      },
+      {
+        "id": 10,
+        "start": 494,
+        "end": 503,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "höchstens"
+      },
+      {
+        "id": 11,
+        "start": 508,
+        "end": 553,
+        "entity": "StatedExpression",
+        "text": "Doppelte der in Sätze 1 und 2 genannten Werte"
+      },
+      {
+        "id": 12,
+        "start": 555,
+        "end": 586,
+        "entity": "StatedKeyFigure",
+        "text": "gemeinsame Sparer-Pauschbeträge"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 4,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 12,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 2,
+        "tail": 1,
+        "relation": "hasRange"
+      },
+      {
+        "id": 3,
+        "head": 4,
+        "tail": 2,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 4,
+        "head": 2,
+        "tail": 3,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 5,
+        "head": 6,
+        "tail": 5,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 6,
+        "head": 12,
+        "tail": 5,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 7,
+        "head": 4,
+        "tail": 6,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 8,
+        "head": 6,
+        "tail": 7,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 9,
+        "head": 6,
+        "tail": 8,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 10,
+        "head": 12,
+        "tail": 8,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 11,
+        "head": 12,
+        "tail": 9,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 12,
+        "head": 11,
+        "tail": 10,
+        "relation": "hasRange"
+      },
+      {
+        "id": 13,
+        "head": 12,
+        "tail": 11,
+        "relation": "hasExpression"
+      }
+    ]
+  },
+  {
+    "id": 1016,
+    "law": "Evaluation",
+    "paragraph": "EStG § 9 Abs. 7 - Stufe 3",
+    "text": "Zum Ausgleich inflationsbedingter Mehrkosten (Inflationsausgleich) ist bei der Ermittlung der Einkünfte ein Pauschbetrag in Höhe von 100 Euro je Monat, in welchem der Steuerpflichtige erwerbstätig ist, als Werbungskosten abzuziehen. Dieser Abzug ist begrenzt auf 600 Euro für den jeweiligen Veranlagungszeitraum.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 46,
+        "end": 65,
+        "entity": "StatedKeyFigure",
+        "text": "Inflationsausgleich"
+      },
+      {
+        "id": 1,
+        "start": 133,
+        "end": 136,
+        "entity": "StatedExpression",
+        "text": "100"
+      },
+      {
+        "id": 2,
+        "start": 137,
+        "end": 141,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 3,
+        "start": 142,
+        "end": 200,
+        "entity": "Factor",
+        "subclass": "TemporalFactor",
+        "text": "je Monat, in welchem der Steuerpflichtige erwerbstätig ist"
+      },
+      {
+        "id": 4,
+        "start": 250,
+        "end": 262,
+        "entity": "Range",
+        "subclass": "UpperLimit",
+        "text": "begrenzt auf"
+      },
+      {
+        "id": 5,
+        "start": 263,
+        "end": 266,
+        "entity": "StatedExpression",
+        "text": "600"
+      },
+      {
+        "id": 6,
+        "start": 267,
+        "end": 271,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 5,
+        "tail": 4,
+        "relation": "hasRange"
+      },
+      {
+        "id": 1,
+        "head": 5,
+        "tail": 6,
+        "relation": "hasUnit"
+      }
+    ]
+  },
+  {
+    "id": 1017,
+    "law": "Evaluation",
+    "paragraph": "EStG § 20 Abs. 9 - Stufe 1",
+    "text": "Bei der Ermittlung der Einkünfte aus Kapitalvermögen ist auf Antrag als Werbungskosten ein Betrag von 1 250 Euro abzuziehen (Sparer-Pauschbetrag); der Abzug der tatsächlichen Werbungskosten ist in diesem Falle ausgeschlossen. 2 Ehegatten, die zusammen veranlagt werden, wird ein gemeinsamer Sparer-Pauschbetrag von 2 500 Euro gewährt. 3 Der gemeinsame Sparer-Pauschbetrag wird bei der Einkunftsermittlung bei jedem Ehegatten je zur Hälfte abgezogen; sind die Kapitalerträge eines Ehegatten niedriger als 1 250 Euro, so wird der anteilige Sparer-Pauschbetrag insoweit, als er die Kapitalerträge dieses Ehegatten übersteigt, bei dem anderen Ehegatten abgezogen. 4 Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag dürfen nicht höher sein als die nach Maßgabe des Absatzes 6 verrechneten Kapitalerträge.\n",
+    "entities": [
+      {
+        "id": 0,
+        "start": 23,
+        "end": 52,
+        "entity": "Condition",
+        "text": "Einkünfte aus Kapitalvermögen"
+      },
+      {
+        "id": 1,
+        "start": 57,
+        "end": 67,
+        "entity": "Condition",
+        "text": "auf Antrag"
+      },
+      {
+        "id": 2,
+        "start": 102,
+        "end": 107,
+        "entity": "StatedExpression",
+        "text": "1 250"
+      },
+      {
+        "id": 3,
+        "start": 108,
+        "end": 112,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 4,
+        "start": 125,
+        "end": 144,
+        "entity": "StatedKeyFigure",
+        "text": "Sparer-Pauschbetrag"
+      },
+      {
+        "id": 5,
+        "start": 228,
+        "end": 268,
+        "entity": "Condition",
+        "text": "Ehegatten, die zusammen veranlagt werden"
+      },
+      {
+        "id": 6,
+        "start": 279,
+        "end": 310,
+        "entity": "StatedKeyFigure",
+        "text": "gemeinsamer Sparer-Pauschbetrag"
+      },
+      {
+        "id": 7,
+        "start": 315,
+        "end": 320,
+        "entity": "StatedExpression",
+        "text": "2 500"
+      },
+      {
+        "id": 8,
+        "start": 321,
+        "end": 325,
+        "entity": "Unit",
+        "subclass": "Currency",
+        "text": "Euro"
+      },
+      {
+        "id": 9,
+        "start": 662,
+        "end": 812,
+        "entity": "Condition",
+        "text": "Der Sparer-Pauschbetrag und der gemeinsame Sparer-Pauschbetrag dürfen nicht höher sein als die nach Maßgabe des Absatzes 6 verrechneten Kapitalerträge"
+      }
+    ],
+    "relations": [
+      {
+        "id": 0,
+        "head": 6,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 1,
+        "head": 4,
+        "tail": 0,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 2,
+        "head": 6,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 3,
+        "head": 4,
+        "tail": 1,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 4,
+        "head": 4,
+        "tail": 2,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 5,
+        "head": 2,
+        "tail": 3,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 6,
+        "head": 6,
+        "tail": 5,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 7,
+        "head": 6,
+        "tail": 7,
+        "relation": "hasExpression"
+      },
+      {
+        "id": 8,
+        "head": 7,
+        "tail": 8,
+        "relation": "hasUnit"
+      },
+      {
+        "id": 9,
+        "head": 6,
+        "tail": 9,
+        "relation": "hasCondition"
+      },
+      {
+        "id": 10,
+        "head": 4,
+        "tail": 9,
+        "relation": "hasCondition"
+      }
+    ]
+  }
+]
+}

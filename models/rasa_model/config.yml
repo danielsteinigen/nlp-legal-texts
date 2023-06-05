@@ -1,0 +1,24 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: "de_core_news_sm"
+
+# CRF
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer  # https://rasa.com/docs/rasa/components#lexicalsyntacticfeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: CRFEntityExtractor      # https://rasa.com/docs/rasa/components#crfentityextractor
+    max_iterations: 100
+  - name: EntitySynonymMapper
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+- name: MemoizationPolicy
+- name: KerasPolicy
+- name: MappingPolicy

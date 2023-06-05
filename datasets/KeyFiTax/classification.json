@@ -1,0 +1,95 @@
+{
+    "entity_types": [
+        {
+            "idx": 0,
+            "label": "O"
+        },
+        {
+            "idx": 1,
+            "label": "StatedKeyFigure"
+        },
+        {
+            "idx": 2,
+            "label": "Condition"
+        },
+        {
+            "idx": 3,
+            "label": "Expression"
+        },
+        {
+            "idx": 4,
+            "label": "Unit"
+        },
+        {
+            "idx": 5,
+            "label": "Range"
+        },
+        {
+            "idx": 6,
+            "label": "Factor"
+        },
+        {
+            "idx": 7,
+            "label": "DeclarativeKeyFigure"
+        },
+        {
+            "idx": 8,
+            "label": "DeclarativeExpression"
+        }
+    ],
+    "relation_types": [
+        {
+            "idx": 9,
+            "label": "hasCondition"
+        },
+        {
+            "idx": 10,
+            "label": "hasExpression"
+        },
+        {
+            "idx": 11,
+            "label": "hasUnit"
+        },
+        {
+            "idx": 12,
+            "label": "hasRange"
+        },
+        {
+            "idx": 13,
+            "label": "hasFactor"
+        },
+        {
+            "idx": 14,
+            "label": "join"
+        },
+        {
+            "idx": 15,
+            "label": "hasKeyFigure"
+        },
+        {
+            "idx": 16,
+            "label": "hasParagraph"
+        },
+        {
+            "idx": 17,
+            "label": "hasLegalSource"
+        }
+    ],
+    "id_of_non_entity": 0,
+    "groups": [
+        [
+            0,
+            2
+        ],
+        [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    ]
+}
