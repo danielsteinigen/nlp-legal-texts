@@ -14,7 +14,7 @@
         },
         {
             "idx": 3,
-            "label": "Expression"
+            "label": "StatedExpression"
         },
         {
             "idx": 4,
@@ -26,11 +26,11 @@
         },
         {
             "idx": 6,
-            "label": "Factor"
+            "label": "DeclarativeKeyFigure"
         },
         {
             "idx": 7,
-            "label": "DeclarativeKeyFigure"
+            "label": "Factor"
         },
         {
             "idx": 8,
@@ -52,27 +52,15 @@
         },
         {
             "idx": 12,
-            "label": "hasRange"
-        },
-        {
-            "idx": 13,
-            "label": "hasFactor"
-        },
-        {
-            "idx": 14,
             "label": "join"
         },
         {
-            "idx": 15,
-            "label": "hasKeyFigure"
+            "idx": 13,
+            "label": "hasRange"
         },
         {
-            "idx": 16,
-            "label": "hasParagraph"
-        },
-        {
-            "idx": 17,
-            "label": "hasLegalSource"
+            "idx": 14,
+            "label": "hasFactor"
         }
     ],
     "id_of_non_entity": 0,

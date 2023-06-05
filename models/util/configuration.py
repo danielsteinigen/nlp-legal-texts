@@ -12,8 +12,9 @@ class TrainingConfiguration(BaseModel):
 
 
 class InferenceConfiguration(BaseModel):
-    model_path_keyfigure: str = "rasa_model/model/keyfitax_keyfigure"
-    model_path_condition: str = "rasa_model/model/keyfitax_condition"
+    model_path_keyfigure: str = "danielsteinigen/KeyFiTax"
+    # model_path_keyfigure: str = "rasa_model/model/keyfitax_keyfigure"
+    # model_path_condition: str = "rasa_model/model/keyfitax_condition"
     spacy_model: str = "de_core_news_sm"
     transformer_model: str = "xlm-roberta-large"
     merge_entities: bool = True

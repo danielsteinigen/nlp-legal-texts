@@ -4,7 +4,6 @@ from typing import List, Any
 import copy
 
 import torch
-from injector import inject, singleton
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer, AutoModelForTokenClassification, Trainer
 
@@ -12,12 +11,12 @@ from util.process_data import Sample, Entity, EntityType, EntityTypeSet, SampleL
 from util.configuration import InferenceConfiguration
 
 valid_relations = { # head : [tail, ...]
-    "Kennzahl": ["Kennzahl", "Bedingung", "Wert", "Wertumschreibung"],
-    "Kennzahlumschreibung": ["Kennzahlumschreibung", "Bedingung", "Wert", "Wertumschreibung"],
-    "Wert": ["Einheit", "Faktor", "Wertebereich", "Bedingung"],
-    "Wertumschreibung": ["Wertumschreibung", "Einheit", "Faktor", "Wertebereich", "Bedingung"],
-    "Bedingung": ["Bedingung", "Wert", "Wertumschreibung"],
-    "Wertebereich": ["Wertebereich"],
+    "StatedKeyFigure": ["StatedKeyFigure", "Condition", "StatedExpression", "DeclarativeExpression"],
+    "DeclarativeKeyFigure": ["DeclarativeKeyFigure", "Condition", "StatedExpression", "DeclarativeExpression"],
+    "StatedExpression": ["Unit", "Factor", "Range", "Condition"],
+    "DeclarativeExpression": ["DeclarativeExpression", "Unit", "Factor", "Range", "Condition"],
+    "Condition": ["Condition", "StatedExpression", "DeclarativeExpression"],
+    "Range": ["Range"]
 }
 
 class TokenClassificationDataset(Dataset):
@@ -43,7 +42,7 @@ class TransformersInference():
         self.__logger = logging.getLogger(self.__class__.__name__)
         self.__logger.info(f"Load Configuration: {config.dict()}")
 
-        with open(f"{config.model_path_keyfigure}/classification.json", mode='r', encoding="utf-8") as f:
+        with open(f"../datasets/KeyFiTax/classification.json", mode='r', encoding="utf-8") as f:
             self.__entity_type_set = EntityTypeSet.parse_obj(json.load(f))
         self.__entity_type_label_to_id_mapping = {x.label: x.idx for x in self.__entity_type_set.all_types()}
         self.__entity_type_id_to_label_mapping = {x.idx: x.label for x in self.__entity_type_set.all_types()}

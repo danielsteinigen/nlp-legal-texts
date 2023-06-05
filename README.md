@@ -2,9 +2,9 @@
 This repository contains the dataset and source code of the approaches and models from the paper *"Semantic Extraction of Key Figures and Their Properties From Tax Legal Texts using Neural Models"*.  
   
 We provide our dataset, the best model and a demonstrator also at 🤗:
-- Demonstrator: [https://huggingface.co/spaces/..](https://huggingface.co/spaces "Check out our Demo")
-- Dataset: [https://huggingface.co/datasets/..](https://huggingface.co/datasets "Check out our Dataset")
-- Model: [https://huggingface.co/models/..](https://huggingface.co/models "Check out our Model")
+- Demonstrator: [https://huggingface.co/spaces/danielsteinigen/NLP-Legal-Texts](https://huggingface.co/spaces/danielsteinigen/NLP-Legal-Texts "Check out our Demo")
+- Dataset: [https://huggingface.co/datasets/danielsteinigen/KeyFiTax](https://huggingface.co/datasets/danielsteinigen/KeyFiTax "Check out our Dataset")
+- Model: [https://huggingface.co/danielsteinigen/KeyFiTax](https://huggingface.co/danielsteinigen/KeyFiTax "Check out our Model")
 
 ## Dataset
 In our paper we introduced __*KeyFiTax*__, a dataset with key figures based on paragraphs of German tax acts manually annotated by tax experts.
